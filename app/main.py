@@ -27,7 +27,7 @@ class Amigo(BaseModel):
 
 @app.get("/")
 def get_inicial():
-    return {"data":"app funcionando"}
+    return {"data":"app funcionando :)"}
 
     
 @app.get("/amigos")
