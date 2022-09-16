@@ -76,7 +76,7 @@ def update_amigo(id: int, updated_amigo:Amigo, db: Session = Depends(get_db)):
     yo_query.update({"selecciono":True}, synchronize_session=False)
     db.commit()
 
-    amigo_query = db.query(models.Amigo).filter(models.Amigo.id_persona != id)
+    amigo_query = db.query(models.Amigo).filter(models.Amigo.id_persona != id and models.Amigo.seleccionado == False)
     amigo = amigo_query.first()
     if amigo == None:
         raise HTTPException(
