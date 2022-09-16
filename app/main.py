@@ -25,7 +25,11 @@ class Amigo(BaseModel):
     selecciono : bool = False
 
 
+@app.get("/")
+def get_inicial():
+    return {"data":"app funcionando"}
 
+    
 @app.get("/amigos")
 def get_amigos(db: Session = Depends(get_db)):
     # accediendo a la base de datos.vamos a hacer una query.vamos a buscar el modelo.traemos todos los datos que concuerden con el modelo
