@@ -4,10 +4,10 @@ from sqlalchemy.orm import sessionmaker
 
 # from ..db import (HOST, DATABASE_NAME, USER, PASSWORD, PORT)
 
-HOST = 'ec2-18-204-142-254.compute-1.amazonaws.com'
-DATABASE_NAME = 'd722tfeql1fvf6'
-USER = 'xaslnqonhlciew'
-PASSWORD = '2bbc5c3a33e0307a6f5451948373917c618a7887a20a02370bc18a6d21058380'
+HOST = 'host'
+DATABASE_NAME = 'database_name'
+USER = 'user'
+PASSWORD = 'password'
 PORT = 5432
 
 # connecion string
